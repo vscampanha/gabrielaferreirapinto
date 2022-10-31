@@ -133,8 +133,8 @@ label {
 }
 
 .arrow {
-  -webkit-animation: bounceLeft 4s infinite;
-  animation: bounceLeft 4s infinite;
+  -webkit-animation: bounceLeft 3s infinite;
+  animation: bounceLeft 3s infinite;
 }
 
 .progress {
@@ -150,3 +150,6 @@ label {
     width: 100%;
   }
 }
+
+
+

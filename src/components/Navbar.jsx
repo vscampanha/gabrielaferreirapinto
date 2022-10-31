@@ -1,15 +1,14 @@
 import React from "react";
-
 import { navLinks } from "../constants";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex mt-5 py-6 lg:pr-[4rem] xl:pr-[19rem] justify-between items-center navbar">
+    <nav className=" w-full flex py-6 sm:pr-[4rem] lg:pr-[4rem] xl:pr-[19rem] justify-between items-center navbar">
       <ul className="list-none text-[1.2rem] sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-normal cursor-pointer text-[1.3rem] 
+            className={`vertical font-normal cursor-pointer text-[1.3rem] 
             ${
               index === 0
                 ? "underline underline-offset-8 decoration-main"
