@@ -8,9 +8,11 @@ const App = () => (
     <Main />
 
     {/* Services */}
-    <div className={`mx-[5%] drop-shadow-md ${styles.flexCenter}`}>
+    <div
+      className={`shadow-[inset_0_0_10px_grey] bg-secondary ${styles.flexCenter}`}
+    >
       <div
-        className={`grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ${styles.boxWidth} mt-[8rem] mb-[5rem] xl:mx-[20%]`}
+        className={`mx-[5%] grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ${styles.boxWidth} mt-[8rem] mb-[5rem] xl:mx-[20%]`}
       >
         <Services />
       </div>

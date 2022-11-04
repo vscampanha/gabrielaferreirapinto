@@ -151,5 +151,61 @@ label {
   }
 }
 
+.sidebar_on {
+  /* -webkit-animation: slide-on 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  /* animation: slide-on 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  width: 1000px;
+  display: block;
+}
 
+.sidebar_off {
+  /* -webkit-animation: slide-off 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  /* animation: slide-off 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+  width: 1px;
+  transition: all 0.75s ease;
+  display: block;
+}
 
+@-webkit-keyframes slide-on {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-on {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-off {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+@keyframes slide-off {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}

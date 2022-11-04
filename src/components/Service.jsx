@@ -3,16 +3,15 @@ import { useEffect, useState } from "react";
 import styles from "../style";
 
 const Service = ({ service }) => {
-
   return (
     <div
       key={service.id}
-      id={service.id}
+      id="services"
       className={` ${styles.flexCenter} ${
         service.id === "court"
-          ? "xs:p-[50%] xs:bg-boxGrey md:p-[50%] sm:py-[20%] sm:col-span-2 sm:row-span-1 sm:row-start-2 md:col-span-1 md:row-span-2 sm:border-2 sm:bg-secondary sm:border-main h-[100%]"
-          : "bg-boxGrey p-[50%]"
-        } box-border flip-card flip-card-inner`}
+          ? "xs:p-[50%] xs:bg-primary md:p-[50%] sm:py-[20%] sm:col-span-2 sm:row-span-1 sm:row-start-2 md:col-span-1 md:row-span-2 sm:border-2 sm:bg-secondary sm:border-main h-[100%]"
+          : "bg-primary p-[50%]"
+      } box-border flip-card flip-card-inner bg-primary shadow-md`}
     >
       <div className="flip-card-front">
         <div className="xs:h-[7rem] xs:w-[7rem] sm:h-[10rem] sm:w-[10rem]">

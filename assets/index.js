@@ -7,5 +7,19 @@ import justica from "./justica.png";
 import logo from "./Group72.png";
 import sol from "./sol.png";
 import video from "./video/statue_video.mp4";
+import menu from "./menu.svg";
+import close from "./close.svg";
 
-export { approval, arrow, court, family, handshake, justica, logo, sol, video };
+export {
+  close,
+  menu,
+  approval,
+  arrow,
+  court,
+  family,
+  handshake,
+  justica,
+  logo,
+  sol,
+  video,
+};

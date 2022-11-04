@@ -6,7 +6,7 @@ import styles from "../style";
 
 const Hero = () => {
   return (
-    <div className="relative w-full lg:mt-7">
+    <section id="home" className="relative w-full lg:mt-7 z-0">
       <div className="absolute w-full xs:h-[20rem] md:h-[25rem] fill">
         <div className="bg-secondary h-[100%] progress"></div>
       </div>
@@ -14,13 +14,17 @@ const Hero = () => {
       <div className="relative grid xs:grid-cols-[10%_5%_90%] lg:grid-cols-[5%_5%_20%_] xl:grid-cols-[15%_5%_20%_]">
         <div></div>
         <div className="bg-primary"></div>
-        
+
         {/* Logo */}
-        <img src={logo} alt="Gabriela Logo" className="bg-primary xs:h-[20rem] md:h-[25rem]" />
+        <img
+          src={logo}
+          alt="Gabriela Logo"
+          className="bg-primary xs:h-[20rem] md:h-[25rem]"
+        />
 
         {/* Video*/}
         <div className="xs:invisible lg:visible">
-          <div className="absolute top-[-5%] lg:right-[4rem] xl:right-[19rem] lg:w-[45%] xl:w-[30%] container come-in">
+          <div className="absolute top-[-5%] lg:right-[4rem] xl:right-[19rem] lg:w-[45%] xl:w-[29%] container come-in">
             <video muted autoPlay loop>
               <source src={video} type="video/mp4" />
             </video>
@@ -32,12 +36,16 @@ const Hero = () => {
 
         {/* Description and contact button */}
         <div className="col-span-2 col-start-3 my-6 xs:text-sm sm:text-lg">
-          <div className="xs:w-[80%] sm:w-[60%] md:w-[30%] sm:my-4 w-[25%]">
+          <div className="xs:w-[80%] sm:w-[60%] md:w-[30%] xs:my-4 w-[25%]">
             <p>{texts.header_main}</p>
           </div>
           <div className="arrow-left grid xs:grid-cols-1 sm:grid-cols-[30%_70%] md:grid-cols-[15%_85%] mt-8 cursor-pointer fill">
-            <h2 className="xs:text-lg sm:text-2xl font-bold">Entre em contacto</h2>
-            <div className={`xs:h-[2rem] bg-secondary ${styles.flexJustStart} progress`}>
+            <h2 className="xs:text-lg sm:text-2xl font-bold">
+              Entre em contacto
+            </h2>
+            <div
+              className={`xs:h-[2rem] bg-secondary ${styles.flexJustStart} progress`}
+            >
               <a href="#" className="ml-5">
                 <img src={arrow} alt="arrow" className="arrow w-[5rem]" />
               </a>
@@ -45,7 +53,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

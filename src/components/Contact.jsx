@@ -7,8 +7,11 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsClock, BsTelephone } from "react-icons/bs";
 
 const Contact = () => (
-  <div className={`w-[100%] px-[5%] my-[5%]`}>
-    <div className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center" id="contact-btn">
+  <section id="contacts" className={`w-[100%] px-[5%] my-[5%]`}>
+    <div
+      className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center"
+      id="contact-btn"
+    >
       <h1 className="text-3xl font-bold">Contactos</h1>
       <button
         type="submit"
@@ -75,7 +78,7 @@ const Contact = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Contact;
