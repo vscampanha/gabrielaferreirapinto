@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="bg-secondary h-[100%] progress"></div>
       </div>
 
-      <div className="relative grid xs:grid-cols-[10%_5%_90%] lg:grid-cols-[5%_5%_20%_] xl:grid-cols-[15%_5%_20%_]">
+      <div className="relative grid xs:grid-cols-[10%_5%_90%] lg:grid-cols-[10%_5%_20%_] xl:grid-cols-[15%_5%_20%_]">
         <div></div>
         <div className="bg-primary"></div>
 
@@ -24,7 +24,7 @@ const Hero = () => {
 
         {/* Video*/}
         <div className="xs:invisible lg:visible">
-          <div className="absolute top-[-5%] lg:right-[4rem] xl:right-[19rem] lg:w-[45%] xl:w-[29%] container come-in">
+          <div className="absolute top-[-5%] lg:right-[4rem] xl:right-[19rem] xs:w-[40%] xl:w-[29%] container come-in">
             <video muted autoPlay loop>
               <source src={video} type="video/mp4" />
             </video>

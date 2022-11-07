@@ -6,7 +6,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className=" w-full flex sm:pr-[4rem] lg:pr-[4rem] xl:pr-[19rem] justify-between items-center navbar">
+    <nav className="w-full flex sm:pr-[4rem] lg:pr-[4rem] xl:pr-[19rem] justify-between items-center navbar">
       <ul className="list-none py-2 text-[1.2rem] sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -24,19 +24,19 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="sm:hidden absolute top-[5%] right-[10%] z-50">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle((prev) => !prev)}
-        />
+      <div className="sm:hidden fixed top-[5%] right-[10%] z-50 bg-primary">
+        <div className="border-2 border-main p-[5px]">
+          <img
+            src={toggle ? close : menu}
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
+            onClick={() => setToggle((prev) => !prev)}
+          />
+        </div>
       </div>
 
       <ul
-        className={`${
-          toggle ? "flex" : "hidden"
-        } h-[100vh] w-[100vw] bg-secondary absolute top-0 z-40 list-none flex flex-col justify-center items-center 
+        className={`sm:hidden h-[100vh] w-[100vw] bg-secondary fixed top-0 z-40 list-none flex flex-col justify-center items-center 
         ${toggle ? "sidebar_on" : "sidebar_off"}`}
       >
         {navLinks.map((nav, index) => (
