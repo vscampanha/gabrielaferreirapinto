@@ -7,7 +7,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsClock, BsTelephone } from "react-icons/bs";
 
 const Contact = () => (
-  <section id="contacts" className="w-[100%] px-[5%] xs:my-[10%] md:my-[10%]">
+  <section id="contacts" className="w-[100%] px-[5%] xs:mt-[10%] md:mt-[10%]">
     <div
       className="grid xs:grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-center"
       id="contact-btn"
@@ -15,7 +15,8 @@ const Contact = () => (
       <h1 className="text-3xl font-bold">Contactos</h1>
       <button
         type="submit"
-        className="xs:hidden sm:visible sm:w-[40%] text-lg justify-center border border-transparent bg-main py-4 text-white hover:bg-[#B72F31] xs:place-self-center xs:mt-4 sm:place-self-end"
+        className="xs:hidden sm:visible sm:w-[40%] text-lg justify-center border border-transparent bg-main py-4 text-white 
+        hover:bg-[#B72F31] xs:place-self-center xs:mt-4 sm:place-self-end"
       >
         <a href={`mailto: ${contacts.emails[0]}`}>Enviar mensagem</a>
       </button>

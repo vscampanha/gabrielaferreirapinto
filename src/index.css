@@ -153,13 +153,13 @@ label {
 }
 
 .sidebar_on {
-  -webkit-animation: slide-on 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-on 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-on 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-on 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .sidebar_off {
-  -webkit-animation: slide-off 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-off 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-off 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-off 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-on {

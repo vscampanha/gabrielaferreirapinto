@@ -1,13 +1,13 @@
 import React from "react";
 
-import { logo, video, arrow } from "/assets";
+import { logo_xl, video, arrow } from "/assets";
 import { texts } from "../constants";
 import styles from "../style";
 
 const Hero = () => {
   return (
     <section id="home" className="relative w-full lg:mt-7 z-0">
-      <div className="absolute w-full xs:h-[20rem] md:h-[25rem] fill">
+      <div className="absolute w-full xs:h-[20rem] sm:h-[30rem] md:h-[25rem] fill">
         <div className="bg-secondary h-[100%] progress"></div>
       </div>
 
@@ -17,9 +17,9 @@ const Hero = () => {
 
         {/* Logo */}
         <img
-          src={logo}
+          src={logo_xl}
           alt="Gabriela Logo"
-          className="bg-primary xs:h-[20rem] md:h-[25rem]"
+          className="bg-primary xs:h-[20rem] sm:h-[30rem] md:h-[25rem]"
         />
 
         {/* Video*/}
@@ -35,18 +35,18 @@ const Hero = () => {
         <div></div>
 
         {/* Description and contact button */}
-        <div className="col-span-2 col-start-3 my-6 xs:text-sm sm:text-lg">
+        <div className="col-span-2 col-start-3 my-6 xs:text-sm sm:text-xl md:text-lg">
           <div className="xs:w-[80%] sm:w-[60%] md:w-[30%] xs:my-4 w-[25%]">
             <p>{texts.header_main}</p>
           </div>
-          <div className="arrow-left grid xs:grid-cols-1 sm:grid-cols-[30%_70%] md:grid-cols-[15%_85%] mt-8 cursor-pointer fill">
-            <h2 className="xs:text-lg sm:text-2xl font-bold">
+          <div className="arrow-left grid xs:grid-cols-1 sm:grid-cols-[35%_70%] md:grid-cols-[15%_85%] mt-8 cursor-pointer fill">
+            <h2 className="xs:text-lg sm:text-3xl md:text-2xl font-bold">
               Entre em contacto
             </h2>
             <div
               className={`xs:h-[2rem] bg-secondary ${styles.flexJustStart} progress`}
             >
-              <a href="#" className="ml-5">
+              <a href="#contacts" className="ml-5">
                 <img src={arrow} alt="arrow" className="arrow w-[5rem]" />
               </a>
             </div>
