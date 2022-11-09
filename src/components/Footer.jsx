@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "../style";
 import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <section className={`${styles.flexCenter} ${styles.paddingY}`}>
+    <section className="flex justify-center items-center sm:pt-16 sm:pb-8 py-2">
       <div className="w-full grid grid-cols-1 justify-between items-center">
         <p className="font-normal text-center text-[15px] leading-[27px] text-black">
           Copyright Ⓒ 2022 Gabriela Ferreira Pinto.

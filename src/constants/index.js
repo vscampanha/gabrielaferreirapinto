@@ -1,3 +1,5 @@
+import { court, family, handshake, justica, approval } from "../assets";
+
 export const navLinks = [
   {
     id: "home",
@@ -18,31 +20,31 @@ export const services = [
     id: "family",
     title: "Familia",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
-    icon: "../assets/family.png",
+    icon: family,
   },
   {
     id: "court",
     title: "Tribunal",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
-    icon: "../assets/court.png",
+    icon: court,
   },
   {
     id: "justice",
     title: "Justiça",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
-    icon: "../assets/justica.png",
+    icon: justica,
   },
   {
     id: "approval",
     title: "Acordos",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
-    icon: "../assets/approval.png",
+    icon: approval,
   },
   {
     id: "building",
     title: "Predial",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
-    icon: "../assets/approval.png",
+    icon: handshake,
   },
 ];
 

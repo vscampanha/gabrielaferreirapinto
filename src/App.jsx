@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./style";
 
 import { Main, Services, Contact, Footer } from "./components";
 
@@ -8,19 +7,15 @@ const App = () => (
     <Main />
 
     {/* Services */}
-    <div
-      className={`shadow-[inset_0_0_10px_grey] bg-secondary ${styles.flexCenter}`}
-    >
-      <div
-        className={`my-[7%] mx-[5%] grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ${styles.boxWidth} xl:mx-[20%]`}
-      >
+    <div className="flex justify-center items-center shadow-[inset_0_0_10px_grey] bg-secondary">
+      <div className="my-[7%] mx-[5%] grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xl:max-w-[1280px] w-full xl:mx-[20%]">
         <Services />
       </div>
     </div>
 
     {/* Contact */}
-    <div className={`${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className="flex justify-center items-center">
+      <div className="xl:max-w-[1280px] w-full">
         <Contact />
         <Footer />
       </div>

@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
-
-import styles from "../style";
+import React from "react";
 
 const Service = ({ service }) => {
   return (
     <div
       key={service.id}
       id="services"
-      className={` ${styles.flexCenter} ${
+      className={` flex justify-center items-center ${
         service.id === "court"
           ? "xs:p-[50%] xs:bg-primary md:p-[50%] sm:py-[20%] sm:col-span-2 sm:row-span-1 sm:row-start-2 md:col-span-1 md:row-span-2 sm:border-2 sm:bg-secondary sm:border-main h-[100%]"
           : "bg-primary p-[50%]"

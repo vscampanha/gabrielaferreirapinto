@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
-import { menu, close } from "/assets";
+import { menu, close } from "../assets";
 import { BsArrowRightShort } from "react-icons/bs";
 
 const Navbar = () => {
@@ -46,7 +46,7 @@ const Navbar = () => {
             : "sidebar_on"
         }`}
       >
-        {navLinks.map((nav, index) => (
+        {navLinks.map((nav) => (
           <li
             key={nav.id}
             className="w-[100vw] px-[15%] cursor-pointer text-black my-8"

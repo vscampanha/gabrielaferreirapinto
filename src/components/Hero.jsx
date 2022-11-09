@@ -1,8 +1,7 @@
 import React from "react";
 
-import { logo_xl, video, arrow } from "/assets";
+import { logo_xl, video, arrow } from "../assets";
 import { texts } from "../constants";
-import styles from "../style";
 
 const Hero = () => {
   return (
@@ -24,7 +23,7 @@ const Hero = () => {
 
         {/* Video*/}
         <div className="xs:invisible lg:visible">
-          <div className="absolute top-[-5%] lg:right-[4rem] xl:right-[19rem] xs:w-[40%] xl:w-[29%] container come-in">
+          <div className="absolute md:top-[-5%] lg:top-[-7%] lg:right-[4rem] xl:right-[19rem] xs:w-[40%] xl:w-[29%] container come-in">
             <video muted autoPlay loop>
               <source src={video} type="video/mp4" />
             </video>
@@ -43,9 +42,7 @@ const Hero = () => {
             <h2 className="xs:text-lg sm:text-3xl md:text-2xl font-bold">
               Entre em contacto
             </h2>
-            <div
-              className={`xs:h-[2rem] bg-secondary ${styles.flexJustStart} progress`}
-            >
+            <div className="xs:h-[2rem] bg-secondary flex justify-start items-center progress">
               <a href="#contacts" className="ml-5">
                 <img src={arrow} alt="arrow" className="arrow w-[5rem]" />
               </a>
@@ -58,34 +55,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-{
-  /* <div className={`relative grid grid-cols-[10%_5%_15%_70%]`}>
-        <div className=""></div>
-        <div className="bg-primary"></div>
-        Logo
-        <div className="bg-primary h-[30rem] w-[270px]">
-          <img src={logo} alt="Gabriela Logo" className="h-[100%]" />
-        </div>
-        <div className=""></div>
-        Description and contact button
-        <div className=" col-span-2 col-start-3 my-10 text-lg">
-          <div className="w-[30%]">
-            <p>{texts.header_main}</p>
-          </div>
-          <div className="arrow-left grid grid-cols-[15%_85%] mt-8 cursor-pointer fill">
-            <h2 className="text-2xl font-bold">Entre em contacto</h2>
-            <div className={`bg-secondary ${styles.flexJustStart} progress`}>
-              <a href="#" className="ml-5">
-                <img src={arrow} alt="arrow" className="arrow w-[5rem]" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-[5%] right-[15%] w-[30%] container ">
-          <video muted autoPlay loop>
-            <source src={video} type="video/mp4" />
-          </video>
-        </div>
-      </div> */
-}
