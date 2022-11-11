@@ -7,7 +7,7 @@ const App = () => (
     <Main />
 
     {/* Services */}
-    <div className="flex justify-center items-center shadow-[inset_0_0_10px_grey] bg-secondary">
+    <div id="services" className="flex justify-center items-center shadow-[inset_0_0_10px_grey] bg-secondary">
       <div className="my-[7%] mx-[5%] grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xl:max-w-[1280px] w-full xl:mx-[20%]">
         <Services />
       </div>

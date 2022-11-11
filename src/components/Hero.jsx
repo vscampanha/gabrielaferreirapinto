@@ -5,7 +5,7 @@ import { texts } from "../constants";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative w-full lg:mt-7 z-0">
+    <section className="relative w-full lg:mt-7 z-0">
       <div className="absolute w-full xs:h-[20rem] sm:h-[30rem] md:h-[25rem] fill">
         <div className="bg-secondary h-[100%] progress"></div>
       </div>

@@ -3,7 +3,7 @@ import { Hero, Navbar } from "./index";
 
 const Main = () => {
   return (
-    <div className="grid grid-cols-1 h-[100vh] ">
+    <div id="home" className="grid grid-cols-1 h-[100vh] ">
       <Navbar />
       <Hero />
     </div>
