@@ -15,11 +15,13 @@ const Hero = () => {
         <div className="bg-primary"></div>
 
         {/* Logo */}
-        <img
-          src={logo_xl}
-          alt="Gabriela Logo"
-          className="bg-primary xs:h-[20rem] sm:h-[30rem] md:h-[25rem]"
-        />
+        <a href="/">
+          <img
+            src={logo_xl}
+            alt="Gabriela Ferreira Pinto Solicitadora"
+            className="bg-primary xs:h-[20rem] sm:h-[30rem] md:h-[25rem]"
+          />
+        </a>
 
         {/* Video*/}
         <div className="xs:invisible lg:visible">
