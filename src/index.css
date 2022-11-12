@@ -21,6 +21,7 @@ label {
 .flip-card {
   perspective: 1000px;
   position: relative;
+  transition: transform 1s;
 }
 
 .flip-card-front,
@@ -38,7 +39,6 @@ label {
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 

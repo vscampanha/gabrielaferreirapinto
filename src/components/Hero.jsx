@@ -46,7 +46,7 @@ const Hero = () => {
             </h2>
             <div className="xs:h-[2rem] bg-secondary flex justify-start items-center progress">
               <a href="#contacts" className="ml-5">
-                <img src={arrow} alt="arrow" className="arrow w-[5rem]" />
+                <img src={arrow} alt="Contactar" className="arrow w-[5rem]" />
               </a>
             </div>
           </div>
