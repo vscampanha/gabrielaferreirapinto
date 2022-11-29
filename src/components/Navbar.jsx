@@ -2,6 +2,7 @@ import { useState } from "react";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 import { BsArrowRightShort } from "react-icons/bs";
+import { arrow } from "../assets";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(0);
@@ -57,8 +58,10 @@ const Navbar = () => {
               onClick={() => setToggle(toggle + 1)}
             >
               {nav.title}
-              <BsArrowRightShort
-                className={`text-main ${toggle % 2 === 0 ? null : "progress"}`}
+              <img
+                src={arrow}
+                alt={nav.title}
+                className={`w-[60%] ${toggle % 2 === 0 ? null : "arrow"}`}
               />
             </a>
           </li>

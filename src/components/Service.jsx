@@ -12,16 +12,16 @@ const Service = ({ service }) => {
       } box-border flip-card flip-card-inner bg-primary shadow-md`}
     >
       <div className="flip-card-front">
-        <div className="xs:h-[7rem] xs:w-[7rem] sm:h-[10rem] sm:w-[10rem]">
+        <div className="card_front xs:h-[7rem] xs:w-[7rem] sm:h-[10rem] sm:w-[10rem]">
           <img src={service.icon} alt={service.icon} />
         </div>
       </div>
       <div className="flip-card-back text-center antialiased subpixel-antialiased">
-        <div className="px-[10%]">
+        <div className="card_back_text px-[10%]">
           <h1 className="font-bold text-[2rem]">{service.title}</h1>
           <p className="p-4">{service.text}</p>
         </div>
-        <div className="grid grid-cols-[30%_70%] justify-items-start items-center pl-[10%]">
+        <div className="card_back_btn grid grid-cols-[30%_70%] justify-items-start items-center pl-[10%]">
           <p className="text-xl font-bold mr-2">Contactar</p>
           <div
             className={`${

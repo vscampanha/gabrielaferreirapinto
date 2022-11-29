@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 const Maps = () => {
