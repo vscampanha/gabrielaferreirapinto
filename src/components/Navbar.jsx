@@ -47,7 +47,7 @@ const Navbar = () => {
             : "sidebar_on"
         }`}
       >
-        {navLinks.map((nav) => (
+        {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className="w-[100vw] px-[15%] cursor-pointer text-black my-8"
@@ -58,11 +58,13 @@ const Navbar = () => {
               onClick={() => setToggle(toggle + 1)}
             >
               {nav.title}
-              <img
-                src={arrow}
-                alt={nav.title}
-                className={`w-[60%] ${toggle % 2 === 0 ? null : "arrow"}`}
-              />
+              {navLinks.length === index + 1 && (
+                <img
+                  src={arrow}
+                  alt={nav.title}
+                  className={`w-[50%] ${toggle % 2 === 0 ? null : "arrow"}`}
+                />
+              )}
             </a>
           </li>
         ))}
