@@ -20,6 +20,18 @@ label {
   scroll-behavior: smooth;
 }
 
+.icon {
+  transition: transform 1s;
+}
+
+.nav_icon {
+  transform: rotate(0deg);
+}
+
+.nav_icon_ch {
+  transform: rotate(0.5turn);
+}
+
 .flip-card {
   position: relative;
   transition: transform 2s;

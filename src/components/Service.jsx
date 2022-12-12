@@ -16,7 +16,7 @@ const Service = ({ service }) => {
           <img src={service.icon} alt={service.icon} />
         </div>
       </div>
-      <div className="flip-card-back text-center antialiased subpixel-antialiased">
+      <div className="w-full flip-card-back text-center antialiased subpixel-antialiased">
         <div className="card_back_text px-[10%]">
           <h1 className="font-bold text-[2rem]">{service.title}</h1>
           <p className="p-4">{service.text}</p>

@@ -6,18 +6,5 @@ import handshake from "./handshake.png";
 import justica from "./justica.png";
 import logo_xl from "./logo_xl.png";
 import video from "./video/statue_video.mp4";
-import menu from "./menu.svg";
-import close from "./close.svg";
 
-export {
-  close,
-  menu,
-  approval,
-  arrow,
-  court,
-  family,
-  handshake,
-  justica,
-  logo_xl,
-  video,
-};
+export { approval, arrow, court, family, handshake, justica, logo_xl, video };

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
-import { BsArrowRightShort } from "react-icons/bs";
+import { SlArrowDown } from "react-icons/sl";
 import { arrow } from "../assets";
 
 const Navbar = () => {
@@ -26,14 +25,17 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="sm:hidden fixed top-[5%] right-[10%] z-50 bg-primary">
-        <div className="border-2 border-main p-[5px]">
-          <img
-            src={toggle % 2 === 0 ? menu : close}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle(toggle + 1)}
-          />
+      <div className="sm:hidden w-[25%] fixed top-[5%] right-[0] z-50">
+        {/* <div className="border-2 border-main p-[5px]"> */}
+        <div className="progress bg-secondary">
+          <div className="px-4 py-2">
+            <SlArrowDown
+              className={`w-[28px] h-[28px] text-main font-bold icon ${
+                toggle % 2 === 0 ? "nav_icon" : "nav_icon_ch"
+              }`}
+              onClick={() => setToggle(toggle + 1)}
+            />
+          </div>
         </div>
       </div>
 
