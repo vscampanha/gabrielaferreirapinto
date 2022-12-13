@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(0);
 
   return (
-    <nav className="w-full flex sm:pr-[4rem] lg:pr-[4rem] xl:pr-[19rem] justify-between items-center navbar">
+    <nav className="w-full flex sm:pr-[4rem] lg:pr-[4rem] xl:pr-[19rem] xl2:pr-[30rem] justify-between items-center navbar">
       <ul className="list-none py-2 sm:flex hidden justify-end items-center flex-1 xs:text-[1.5rem] md:text-[1.3rem] ">
         {navLinks.map((nav, index) => (
           <li
@@ -27,8 +27,8 @@ const Navbar = () => {
 
       <div className="sm:hidden w-[25%] fixed top-[5%] right-[0] z-50">
         {/* <div className="border-2 border-main p-[5px]"> */}
-        <div className="progress bg-secondary">
-          <div className="px-4 py-2 shadow-md">
+        <div className="progress bg-secondary shadow-md">
+          <div className="px-4 py-2">
             <SlArrowDown
               className={`w-[28px] h-[28px] text-main font-bold icon ${
                 toggle % 2 === 0 ? "nav_icon" : "nav_icon_ch"

@@ -25,7 +25,7 @@ const Hero = () => {
 
         {/* Video*/}
         <div className="xs:invisible lg:visible">
-          <div className="absolute md:top-[-5%] lg:top-[-7%] lg:right-[4rem] xl:right-[19rem] xs:w-[40%] xl:w-[29%] container come-in">
+          <div className="absolute md:top-[-5%] lg:top-[-7%] xl2:top-[-20%] lg:right-[4rem] xl:right-[19rem] xl2:right-[30rem] xs:w-[40%] xl:w-[29%] container come-in">
             <video muted autoPlay loop>
               <source src={video} type="video/mp4" />
             </video>
