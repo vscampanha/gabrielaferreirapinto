@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="sm:hidden w-[25%] fixed top-[5%] right-[0] z-50">
         {/* <div className="border-2 border-main p-[5px]"> */}
         <div className="progress bg-secondary">
-          <div className="px-4 py-2">
+          <div className="px-4 py-2 shadow-md">
             <SlArrowDown
               className={`w-[28px] h-[28px] text-main font-bold icon ${
                 toggle % 2 === 0 ? "nav_icon" : "nav_icon_ch"

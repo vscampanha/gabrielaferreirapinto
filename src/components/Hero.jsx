@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="bg-primary"></div>
 
         {/* Logo */}
-        <a href="/">
+        <a className="w-full" href="/">
           <img
             src={logo_xl}
             alt="Gabriela Ferreira Pinto Solicitadora"
@@ -44,7 +44,7 @@ const Hero = () => {
             <h2 className="xs:text-lg sm:text-3xl md:text-2xl font-bold">
               Entre em contacto
             </h2>
-            <div className="xs:h-[2rem] bg-secondary flex justify-start items-center progress">
+            <div className="xs:h-[2rem] bg-secondary flex justify-start items-center progress shadow-md">
               <a href="#contacts" className="ml-5">
                 <img src={arrow} alt="Contactar" className="arrow w-[5rem]" />
               </a>
