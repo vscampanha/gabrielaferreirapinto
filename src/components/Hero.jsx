@@ -38,7 +38,9 @@ const Hero = () => {
         {/* Description and contact button */}
         <div className="col-span-2 col-start-3 my-6 xs:text-sm sm:text-xl md:text-lg">
           <div className="xs:w-[80%] sm:w-[60%] md:w-[30%] xs:my-4 w-[25%]">
-            <p>{texts.header_main}</p>
+            <p>{texts.header_main1}</p>
+            <p className="italic">{texts.header_p1}
+             - {texts.header_p2}</p>
           </div>
           <div className="arrow-left grid xs:grid-cols-1 sm:grid-cols-[35%_70%] md:grid-cols-[15%_85%] mt-8 cursor-pointer fill">
             <h2 className="xs:text-lg sm:text-3xl md:text-2xl font-bold">

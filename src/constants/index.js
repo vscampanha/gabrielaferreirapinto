@@ -18,39 +18,42 @@ export const navLinks = [
 export const services = [
   {
     id: "family",
-    title: "Familia",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
+    title: "Direito da Familia e Sucessões",
+    text: "Acordos antenupciais, divorcios, partilha mortis causa, partilha subsquente a divórcio.",
     icon: family,
   },
   {
     id: "court",
-    title: "Tribunal",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
-    icon: court,
+    title: "Registos e Notariado",
+    text: "Georrefernciação - BUPI, Registo predial, Registo comercial, Registo automóvel, Elaboração de contratos, Documentos particulares autenticados (compra e venda, doação), Procurações, Autenticação de documentos, Reconhecimento de assinaturas, Certificação de fotocópias.",
+    icon: approval,
   },
   {
     id: "justice",
-    title: "Justiça",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
+    title: "Direito Comercial",
+    text: "Constituição de empresas, Alteração do pacto social, entre outros.",
     icon: justica,
   },
   {
     id: "approval",
-    title: "Acordos",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
-    icon: approval,
+    title: "Direito do Trabalho",
+    text: "Elaboração de contratos de trabalho, direitos e deveres do trabalhador/empregador.",
+
+    icon: court,
   },
   {
     id: "building",
-    title: "Predial",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus vel tempora placeat? Officia, adipisci vel animi enim, laborum voluptates quae impedit eos ex laboriosam repudiandae itaque, dicta ipsum similique neque.",
+    title: "Direito Fiscal",
+    text: "Avaliações prediais - Modelo 1 do IMI, Imposto de selo, IMT, Legalização de viaturas estrangeiras.",
     icon: handshake,
   },
 ];
 
 export const texts = {
-  header_main:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, incidunt sequi nemo ex exercitationem numquam eveniet vero ullam aliquid, eligendi voluptatem minus pariatur quasi consectetur laboriosam ab dolorum officia tempore.",
+  header_main1:
+    "Licenciada em Solicitadoria, inscrita na OSAE desde Junho de 2021.",
+  header_p1: "Delegação Concelhia de Ponte de Lima",
+  header_p2: "CP 8720",
 };
 
 export const contacts = {
